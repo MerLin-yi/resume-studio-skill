@@ -1,0 +1,12 @@
+{
+  "target_role": "Target role",
+  "target_company": "Target company",
+  "language": "zh-CN",
+  "pages": 1,
+  "include_contact": true,
+  "keywords": [
+    "replace-with-relevant-keyword"
+  ],
+  "constraints": [],
+  "notes": ""
+}

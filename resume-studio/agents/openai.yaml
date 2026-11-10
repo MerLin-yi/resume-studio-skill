@@ -1,0 +1,7 @@
+interface:
+  display_name: "简历工坊"
+  short_description: "根据真实经历和岗位要求，生成可核验、可投递的多版本简历"
+  brand_color: "#2E5B3B"
+  default_prompt: "Use $resume-studio to turn my real experience into an evidence-grounded resume for this target job."
+policy:
+  allow_implicit_invocation: true

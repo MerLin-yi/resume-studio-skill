@@ -1,0 +1,140 @@
+:root {
+  --ink: #1f2a24;
+  --muted: #5f6e65;
+  --line: #dce5de;
+  --accent: #2e5b3b;
+  --paper: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #eef2ee;
+}
+
+body {
+  margin: 0 auto;
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 17mm 14mm;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei",
+    "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.4pt;
+  line-height: 1.55;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+h1 {
+  margin: 0 0 3mm;
+  color: var(--accent);
+  font-size: 25pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.12;
+}
+
+h1 + p {
+  margin: -1mm 0 4mm;
+  padding-bottom: 3mm;
+  border-bottom: 1.2px solid var(--accent);
+  color: var(--muted);
+  font-size: 9.5pt;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  margin: 4.2mm 0 2.2mm;
+  color: var(--accent);
+  font-size: 12.2pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h2::after {
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+  content: "";
+}
+
+h3 {
+  margin: 2.7mm 0 1.2mm;
+  color: #26372d;
+  font-size: 10.6pt;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+p {
+  margin: 1.2mm 0;
+}
+
+ul,
+ol {
+  margin: 1mm 0 1.8mm;
+  padding-left: 5mm;
+}
+
+li {
+  margin: 0.9mm 0;
+  padding-left: 0.6mm;
+}
+
+strong {
+  color: #15231a;
+  font-weight: 650;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+hr {
+  margin: 3mm 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+code {
+  border-radius: 2px;
+  padding: 0.1em 0.28em;
+  background: #f1f5f2;
+  color: #284532;
+  font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.page-break {
+  break-before: page;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+  }
+
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
